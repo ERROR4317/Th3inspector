@@ -25,6 +25,16 @@ function termux() {
 pkg install -y perl
 echo -e "$red [$green+$red]$off Installing JSON Module ...";
 cpan install JSON
+cpan install Getopt::Long
+cpan install HTTP::Request
+cpan install LWP::UserAgent
+cpan install IO::Select
+cpan install HTTP::Cookies
+cpan install HTTP::Response
+cpan install Term::ANSIColor
+cpan install URI::URL
+cpan install IO::Socket::INET
+cpan install Try::Tiny
   echo -e "$red [$green+$red]$off Checking directories ..."
 
 if [ -e "/data/data/com.termux/files/usr/share/Th3inspector" ]; then
